@@ -1,0 +1,25 @@
+with open("story.txt","r") as f:
+  story=f.read()
+
+answer=set()
+start_position='['
+end_position=']'
+index=-1
+
+for i,char in enumerate(story):
+  if char==start_position:
+    index=i
+
+  if char==end_position:
+    answer.add(story[index:i+1])
+    
+answers={}
+for i in answer:
+  words=input('Enter a '+i+' ')
+  answers[i]=words
+
+
+for j in answer:
+  story=story.replace(j,answers[j])  
+
+print(story)
