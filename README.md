@@ -1,0 +1,1 @@
+Learning by doing is an effective way to grasptopics fast.<br>This contains the python projects that I make while I learn.
